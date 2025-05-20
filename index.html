@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Продвижение видео в Ютуб - Trafzilla</title>
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script
+			type="module"
+			src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+		></script>
+	</head>
+	<body>
+		<div class="thanks-block" data-key="formThanks">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+				<path
+					d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+				/>
+			</svg>
+			<span class="translatable" data-key="formThanks"
+				>Сообщение отправлено</span
+			>
+		</div>
+		<div class="modalForm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="translatable" data-key="modalDescription">
+						Вы можете оставить заявку через форму ниже, либо написать нам
+						напрямую в
+						<a href="https://t.me/yourtelegram" target="_blank">Telegram</a>.
+					</p>
+					<button class="close-modal" id="closeModal">X</button>
+				</div>
+				<form class="contact-form modal-form" action="/send" method="POST">
+					<div class="input-container">
+						<input
+							class="input"
+							type="text"
+							placeholder="Имя"
+							name="name"
+							data-placeholder-key="placeholderName"
+						/>
+						<img class="error-icon" src="image/error.svg" alt="Error" />
+						<img class="success-icon" src="image/success.svg" alt="Success" />
+						<p class="message translatable" data-key="messageError">
+							Це поле обов’язкове
+						</p>
+					</div>
+					<div class="input-container">
+						<input
+							class="input"
+							type="email"
+							placeholder="Email"
+							name="email"
+							data-placeholder-key="placeholderEmail"
+						/>
+						<img class="error-icon" src="image/error.svg" alt="Error" />
+						<img class="success-icon" src="image/success.svg" alt="Success" />
+						<p class="message translatable" data-key="messageError">
+							Це поле обов’язкове
+						</p>
+					</div>
+					<div class="input-container textarea-container">
+						<textarea
+							class="input"
+							name="message"
+							placeholder="Напиши свое сообщение…"
+							data-placeholder-key="placeholderMessage"
+						></textarea>
+						<img class="error-icon" src="image/error.svg" alt="Error" />
+						<img class="success-icon" src="image/success.svg" alt="Success" />
+						<p class="message translatable" data-key="messageError">
+							Це поле обов’язкове
+						</p>
+					</div>
+					<button type="submit" class="btn btn-form translatable" data-key="">
+						Отправить
+					</button>
+				</form>
+			</div>
+		</div>
+		<nav class="navbar">
+			<div class="wrapper-navbar container">
+				<div class="logo">Logo</div>
+				<ul class="navbar-list">
+					<a href="#">
+						<div>(</div>
+						<div>
+							<span class="link-text">
+								<span class="text-old translatable" data-key="navMain"
+									>Главная</span
+								>
+								<span class="text-new translatable" data-key="navMain"
+									>Главная</span
+								>
+							</span>
+						</div>
+						<div>)</div>
+					</a>
+					<a href="#why">
+						<div>(</div>
+						<div>
+							<span class="link-text">
+								<span class="text-old translatable" data-key="navWhy"
+									>Почему мы?</span
+								>
+								<span class="text-new translatable" data-key="navWhy"
+									>Почему мы?</span
+								>
+							</span>
+						</div>
+						<div>)</div>
+					</a>
+					<a href="#how">
+						<div>(</div>
+						<div>
+							<span class="link-text">
+								<span class="text-old translatable" data-key="navHow"
+									>Как это работает?</span
+								>
+								<span class="text-new translatable" data-key="navHow"
+									>Как это работает?</span
+								>
+							</span>
+						</div>
+						<div>)</div>
+					</a>
+					<a href="#faq">
+						<div>(</div>
+						<div>
+							<span class="link-text">
+								<span class="text-old">FAQ</span>
+								<span class="text-new">FAQ</span>
+							</span>
+						</div>
+						<div>)</div>
+					</a>
+				</ul>
+
+				<div class="lang-social">
+					<!-- <div class="lang">
+						<a href="#" class="lang-option active">RU</a>
+						<a href="#" class="lang-option">UA</a>
+						<a href="#" class="lang-option">EN</a>
+					</div> -->
+					<div class="lang-select">
+						<div class="wrapper-selected">
+							<div class="selected">RU</div>
+							<div class="arrow">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									fill="#000000"
+									height="800px"
+									width="800px"
+									version="1.1"
+									id="Layer_1"
+									viewBox="0 0 330 330"
+									xml:space="preserve"
+								>
+									<path
+										id="XMLID_225_"
+										d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+									/>
+								</svg>
+							</div>
+						</div>
+
+						<ul class="lang-options">
+							<li data-lang="RU">RU</li>
+							<li data-lang="UA">UA</li>
+							<li data-lang="EN">EN</li>
+						</ul>
+					</div>
+					<a href="">Telegram</a>
+					<div class="burger" id="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<header class="header container">
+			<div class="top-bg-video">
+				<video autoplay muted loop playsinline class="header-video">
+					<source src="image/12.mp4" type="video/mp4" />
+				</video>
+			</div>
+
+			<div class="wrapper-header-content">
+				<div class="wrapper-header-content-text">
+					<h1 class="header-title">
+						<span>
+							<img src="smile.svg" alt="" />
+							<span class="translatable" data-key="title1">Ты снимаешь</span>
+						</span>
+						<span
+							class="translatable"
+							data-key="title2"
+							style="
+								background: linear-gradient(
+									90deg,
+									#b2ffaa 0%,
+									#14ff58 44%,
+									#019964 100%
+								);
+								background-clip: text;
+								-webkit-background-clip: text;
+								-webkit-text-fill-color: transparent;
+							"
+							>мы продвигаем</span
+						>
+					</h1>
+
+					<p
+						class="header-description translatable"
+						data-key="headerDdescription"
+					>
+						Мы используем передовые ИИ-инструменты и SEO, чтобы ваши видео
+						попадали в ТОП YouTube. Алгоритмы подбирают теги, заголовки и
+						тематику — всё для максимального охвата и выхода в рекомендации
+					</p>
+					<div class="header-buttons">
+						<a class="btn translatable" data-key="btnHeader" href="#">Начать</a>
+					</div>
+				</div>
+				<div>
+					<model-viewer
+						id="my-model"
+						src="models/youtube.glb"
+						alt="3D логотип YouTube"
+						auto-rotate
+						rotation-per-second="20deg"
+						camera-controls
+						disable-zoom
+						shadow-intensity="1"
+						interaction-prompt="none"
+						style="width: 400px; height: 400px"
+					></model-viewer>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="greatest">
+				<h2 class="translatable" data-key="greatestTitle">
+					Сильные <span>стороны</span> нашей команды
+				</h2>
+				<div class="greatest-img-wrapper">
+					<img src="image/bg1.png" alt="BG" />
+				</div>
+				<div class="greatest-content container">
+					<div class="greatest-item">
+						<!-- Иконка "Ракета" -->
+						<img src="image/rocket.png" alt="" />
+						<h3 class="translatable" data-key="greatestItemTitle1">
+							Эффективное продвижение
+						</h3>
+						<p class="translatable" data-key="greatestItemDes1">
+							Ваше видео быстро выходит в топ и набирает охваты за счёт точной
+							оптимизации и алгоритмов.
+						</p>
+					</div>
+
+					<div class="greatest-item">
+						<!-- Иконка "Щит" -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path
+								d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V6l9-4z"
+							/>
+						</svg>
+						<h3 class="translatable" data-key="greatestItemTitle2">
+							Уверенное удержание в топе
+						</h3>
+						<p class="translatable" data-key="greatestItemDes2">
+							Гарантируем, что видео попадёт в ТОП-10 по ключевым запросам и
+							останется там.
+						</p>
+					</div>
+
+					<div class="greatest-item">
+						<!-- Иконка "Галочка" -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20 8l-1.4-1.4z" />
+						</svg>
+						<h3 class="translatable" data-key="greatestItemTitle3">
+							Гарантия результата
+						</h3>
+						<p class="translatable" data-key="greatestItemDes3">
+							Если видео не попадёт в топ — мы продвинем другое бесплатно.
+							Никаких рисков для вас.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="why-me" id="why">
+				<div class="wrapper-title-why">
+					<div>(</div>
+					<h2 class="translatable" data-key="whyMeTitle">Почему мы?</h2>
+					<div>)</div>
+				</div>
+				<div class="why-me-content container">
+					<div class="line"></div>
+					<div class="why-me-item">
+						<div data-key="whyMeItemTitle" class="item-title translatable">
+							Преимущества работы с нами
+						</div>
+						<div class="item-description">
+							<div class="translatable" data-key="whyMeItem1Description">
+								<strong>Повышение видимости</strong> — продвигаем видео в ТОП
+								YouTube и Google
+							</div>
+							<div class="translatable" data-key="whyMeItem1Description2">
+								<strong>Рост аудитории</strong> — больше подписчиков и
+								просмотров.
+							</div>
+							<div class="translatable" data-key="whyMeItem1Description3">
+								<strong>Увеличение взаимодействий</strong> — повышаем интерес к
+								вашему контенту.
+							</div>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="why-me-item">
+						<div class="item-title translatable" data-key="whyMeItem2Title">
+							Что вы получаете
+						</div>
+						<div class="item-description">
+							<div class="translatable" data-key="whyMeItem2Description1">
+								ТОП-позиции в поиске Google и YouTube.
+							</div>
+							<div class="translatable" data-key="whyMeItem2Description2">
+								Больше кликов, просмотров и дохода.
+							</div>
+							<div class="translatable" data-key="whyMeItem2Description3">
+								Приток новых клиентов без лишних затрат.
+							</div>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="why-me-item">
+						<div class="item-title translatable" data-key="whyMeItem3Title">
+							Безопасность
+						</div>
+						<div class="item-description">
+							<div class="translatable" data-key="whyMeItem3Description">
+								Используем только проверенные и безопасные методы продвижения,
+								которые полностью соответствуют правилам и стандартам YouTube.
+								Можете быть уверены, что канал будет развиваться без риска
+								нарушения правил платформы.
+							</div>
+						</div>
+					</div>
+					<div class="line"></div>
+				</div>
+			</section>
+
+			<section class="how" id="how">
+				<div class="wrapper-title-why">
+					<div>(</div>
+					<h2 class="translatable" data-key="howTitle">
+						<span>Как это</span><span>работает?</span>
+					</h2>
+					<div>)</div>
+				</div>
+				<div class="how-main-wrapper container">
+					<div class="how-left-column">
+						<div class="how-card-wrapper">
+							<div class="how-card-text-wrapper">
+								<div
+									class="how-card-text-title translatable"
+									data-key="howStep1Title"
+								>
+									Выбор ключевого слова
+								</div>
+
+								<div
+									class="how-card-text-description translatable"
+									data-key="howStep1Description"
+								>
+									Вы сообщаете нам ключевое слово или тематику — это основа для
+									дальнейшей стратегии. Мы поможем уточнить запрос, если нужно.
+								</div>
+							</div>
+							<div class="how-card-bottom">
+								<span>(</span>
+								<span class="translatable" data-key="step1">Шаг 1</span>
+								<span>)</span>
+							</div>
+						</div>
+					</div>
+					<div class="how-mid-column">
+						<div class="how-card-wrapper _2">
+							<div class="how-card-text-wrapper">
+								<div
+									class="how-card-text-title translatable"
+									data-key="howStep2Title"
+								>
+									Анализ и планирование
+								</div>
+								<div
+									class="how-card-text-description translatable"
+									data-key="howStep2Description"
+								>
+									Мы анализируем конкуренцию, целевую аудиторию и создаём
+									эффективный план продвижения, включая подбор тегов, заголовков
+									и описаний.
+								</div>
+							</div>
+							<div class="how-card-bottom">
+								<span>(</span>
+								<span class="translatable" data-key="step2">Шаг 2</span>
+								<span>)</span>
+							</div>
+						</div>
+					</div>
+					<div class="how-right-column">
+						<div class="how-card-wrapper">
+							<div class="how-card-text-wrapper">
+								<div
+									class="how-card-text-title translatable"
+									data-key="howStep3Title"
+								>
+									Мониторинг и поддержка
+								</div>
+								<div
+									class="how-card-text-description translatable"
+									data-key="howStep3Description"
+								>
+									Следим за результатами, предоставляем отчёты и при
+									необходимости корректируем стратегию. Оказываем техническую и
+									консультационную поддержку.
+								</div>
+							</div>
+							<div class="how-card-bottom">
+								<span>(</span>
+								<span class="translatable" data-key="step3">Шаг 3</span>
+								<span>)</span>
+							</div>
+						</div>
+					</div>
+					<div class="how-rightt-column">
+						<div class="how-card-wrapper">
+							<div class="how-card-text-wrapper">
+								<div
+									class="how-card-text-title translatable"
+									data-key="howStep4Title"
+								>
+									Настройка и оптимизация
+								</div>
+								<div
+									class="how-card-text-description translatable"
+									data-key="howStep4Description"
+								>
+									Оптимизируем видео: внедряем SEO-метки, редактируем заголовки,
+									обложки и описание, чтобы YouTube «полюбил» ваш контент.
+								</div>
+							</div>
+							<div class="how-card-bottom">
+								<span>(</span>
+								<span class="translatable" data-key="step4">Шаг 4</span>
+								<span>)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq" id="faq">
+				<div class="faq-wrapper container">
+					<div class="faq-text-wrapper">
+						<div class="faq-title translatable" data-key="faqTitle">FAQ</div>
+						<div class="faq-description translatable" data-key="faqDescription">
+							Здесь вы найдете ответы на основные вопросы. Для получения более
+							подробной информации свяжитесь с нашими менеджерами, используя
+							контактные данные на сайте, нажав кнопку "Telegram !"
+						</div>
+					</div>
+					<div class="faq-wrapper-content">
+						<div class="faq-item">
+							<div class="faq-item-text-wrapper">
+								<div
+									class="faq-item-title translatable"
+									data-key="faqQuestion1"
+								>
+									Сколько времени нужно, чтобы попасть в ТОП Ютуб?
+								</div>
+								<div class="accordion-plus"><span></span></div>
+							</div>
+							<div class="faq-accordion-p">
+								<p class="translatable" data-key="faqAnswer1">
+									Благодаря нашим инновационным методам, обеспечиваем получение
+									первых результатов в течение 2-8 часов.
+								</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-item-text-wrapper">
+								<div
+									class="faq-item-title translatable"
+									data-key="faqQuestion2"
+								>
+									Как долго длится продвижение?
+								</div>
+								<div class="accordion-plus"><span></span></div>
+							</div>
+							<div class="faq-accordion-p">
+								<p class="translatable" data-key="faqAnswer2">
+									Работаем над роликом в течение 7-ми дней, обеспечивая
+									гарантированное попадание в ТОП-10 YouTube.
+								</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-item-text-wrapper">
+								<div
+									class="faq-item-title translatable"
+									data-key="faqQuestion3"
+								>
+									Что делать, если мое видео не попало в топ?
+								</div>
+								<div class="accordion-plus"><span></span></div>
+							</div>
+							<div class="faq-accordion-p">
+								<p class="translatable" data-key="faqAnswer3">
+									Мы уверены в качестве сервиса и готовы предложить бесплатную
+									замену следующего видео, если текущее видео не войдет в
+									ТОП-10.
+								</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-item-text-wrapper">
+								<div
+									class="faq-item-title translatable"
+									data-key="faqQuestion4"
+								>
+									Какие минимальные требования к каналу?
+								</div>
+								<div class="accordion-plus"><span></span></div>
+							</div>
+							<div class="faq-accordion-p">
+								<p class="translatable" data-key="faqAnswer4">
+									Работаем с любыми возростами каналов и тематикой, за
+									исключением тематики 18+ и политических тем.
+								</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-item-text-wrapper">
+								<div
+									class="faq-item-title translatable"
+									data-key="faqQuestion5"
+								>
+									Что мне нужно предоставить вам?
+								</div>
+								<div class="accordion-plus"><span></span></div>
+							</div>
+							<div class="faq-accordion-p">
+								<p class="translatable" data-key="faqAnswer5">
+									Перед загрузкой видео Вам следует отправить нам: - Название
+									ролика.<br />
+									- Теги. <br />
+									- Описание видео
+								</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-item-text-wrapper">
+								<div
+									class="faq-item-title translatable"
+									data-key="faqQuestion6"
+								>
+									Можно ли использовать SMM Панели и другие сервисы?
+								</div>
+								<div class="accordion-plus"><span></span></div>
+							</div>
+							<div class="faq-accordion-p">
+								<p class="translatable" data-key="faqAnswer6">
+									Не использовать другие услуги по продвижению одновременно с
+									нашей, чтобы избежать конфликтов и гарантировать успешную
+									работу.
+								</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-item-text-wrapper">
+								<div
+									class="faq-item-title translatable"
+									data-key="faqQuestion7"
+								>
+									Насколько это безопасно?
+								</div>
+								<div class="accordion-plus"><span></span></div>
+							</div>
+							<div class="faq-accordion-p">
+								<p class="translatable" data-key="faqAnswer7">
+									Мы с 2017 года успешно продвинули более 100 000 видео,
+									используя только безопасные и прозрачные методы. Мы гордимся
+									своей репутацией, и оставили о себе только положительные
+									отзывы о нашем сервисе.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="wrapper-title-why">
+				<div>(</div>
+				<h2 class="translatable" data-key="footerTitle">Наши контакты</h2>
+				<div>)</div>
+			</div>
+
+			<div class="wrapper-footer-content container">
+				<div class="footer-content-text">
+					<p class="translatable" data-key="footerDescription">
+						Если вы хотите получить <span>консультацию</span> или сделать
+						<span>заказ</span>
+						— заполните форму, и мы свяжемся с вами в ближайшее время.
+					</p>
+					<p class="translatable" data-key="footerDescription2">
+						Пожалуйста, укажите в сообщении, как вам удобнее, чтобы мы с вами
+						связались (по телефону, email или через мессенджер). Если
+						предпочитаете мессенджер, пожалуйста, укажите ваш ник, например в
+						Telegram.
+					</p>
+					<p class="translatable" data-key="footerDescription3">
+						Также вы можете написать нам напрямую в <a href="#">Telegram</a>
+					</p>
+				</div>
+				<form class="contact-form" action="/send" method="POST">
+					<div class="input-container">
+						<input
+							class="input"
+							type="text"
+							placeholder="Имя"
+							name="name"
+							data-placeholder-key="placeholderName"
+						/>
+						<img class="error-icon" src="image/error.svg" alt="Error" />
+						<img class="success-icon" src="image/success.svg" alt="Success" />
+						<p class="message translatable" data-key="messageError">
+							Це поле обов’язкове
+						</p>
+					</div>
+					<div class="input-container">
+						<input
+							class="input"
+							type="email"
+							placeholder="Email"
+							name="email"
+							data-placeholder-key="placeholderEmail"
+						/>
+						<img class="error-icon" src="image/error.svg" alt="Error" />
+						<img class="success-icon" src="image/success.svg" alt="Success" />
+						<p class="message translatable" data-key="messageError">
+							Це поле обов’язкове
+						</p>
+					</div>
+					<div class="input-container textarea-container">
+						<textarea
+							class="input"
+							name="message"
+							placeholder="Напиши свое сообщение…"
+							data-placeholder-key="placeholderMessage"
+						></textarea>
+						<img class="error-icon" src="image/error.svg" alt="Error" />
+						<img class="success-icon" src="image/success.svg" alt="Success" />
+						<p class="message translatable" data-key="messageError">
+							Це поле обов’язкове
+						</p>
+					</div>
+					<button
+						disabled
+						type="submit"
+						class="btn btn-form translatable"
+						data-key="buttonForm"
+					>
+						Отправить
+					</button>
+					<div class="form-message translatable" data-key="formFollowup">
+						В скором времени с вами свяжется менеджер
+					</div>
+				</form>
+			</div>
+		</footer>
+		<script type="module">
+			const modelViewer = document.querySelector('#my-model')
+			let interactionTimeout
+			const resetDelay = 3000 // 3 секунды бездействия → возврат в исходное положение
+
+			// Сбрасываем таймер при любом взаимодействии
+			modelViewer.addEventListener('mousedown', startInteraction)
+			modelViewer.addEventListener('touchstart', startInteraction)
+
+			function startInteraction() {
+				// Останавливаем автоповорот при взаимодействии
+
+				// Сбрасываем предыдущий таймер
+				clearTimeout(interactionTimeout)
+
+				// Запускаем новый таймер: если через 3 сек нет действий, возвращаем модель
+				interactionTimeout = setTimeout(resetModel, resetDelay)
+			}
+
+			function resetModel() {
+				// Плавно возвращаем камеру в исходное положение
+				modelViewer.cameraOrbit = '0deg 75deg 105%'
+				modelViewer.smoothCameraTo()
+
+				// Включаем автоповорот снова
+				setTimeout(() => {
+					modelViewer.autoRotate = true
+				}, 500) // Ждём завершения анимации
+			}
+		</script>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>

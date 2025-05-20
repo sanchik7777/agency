@@ -1,0 +1,9 @@
+# Включить мод_rewrite
+RewriteEngine On
+
+# Удалять .html из URL (т.е. /about -> /about.html)
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Если файл не найден, отправлять на 404.html
+ErrorDocument 404 /404.html
